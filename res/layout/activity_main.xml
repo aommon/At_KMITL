@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+	    android:id="@+id/preview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" />
+    
+    <GridView
+         android:numColumns="auto_fit"
+         android:gravity="center"
+         android:columnWidth="250dp"
+         android:stretchMode="columnWidth"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/grid"
+         />
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeading"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/txtHeading"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtSoLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtHeading"
+        android:layout_marginLeft="33dp"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/txtSoLng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSoLat"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/txtBetLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSoLng"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:text="eee" />
+    
+    <TextView
+        android:id="@+id/txtBetLng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBetLat"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:text="qqqq" />
+    
+    <TextView
+        android:id="@+id/txtDesLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBetLng"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/txtDesLng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtDesLat"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/txtAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtDesLng"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:text="ll" />
+    
+    <TextView
+        android:id="@+id/txtI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtAngle"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:text="ll" />
+    
+     <TextView
+        android:id="@+id/txtEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtI"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:text="ll" />
+     
+    <TextView
+        android:id="@+id/txtFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtSoLng"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/txtCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtFin"
+        android:layout_centerHorizontal="true"
+        android:text="Normal" />
+
+    <ImageView
+        android:id="@+id/imgArr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtDesLng"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/b_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Search Destination" 
+        android:drawableLeft="@drawable/icon_search2"/>
+    
+    <ImageView
+        android:id="@+id/b_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/b_search"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/icon_walking2" />
+
+</RelativeLayout>
